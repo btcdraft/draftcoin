@@ -1,0 +1,2 @@
+debian/bin/DraftCoind usr/bin
+src/DraftCoind usr/lib/DraftCoin

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DraftCoin
+Comment=DraftCoin P2P Cryptocurrency
+Comment[fr]=DraftCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=DraftCoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/DraftCoin-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/DraftCoin;
+Categories=Office;
