@@ -20,7 +20,7 @@ packages:
 - "libpng12-dev"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/rat4/DraftCoin.git"
+- "url": "https://github.com/btcdraft/DraftCoin.git"
   "dir": "DraftCoin"
 files:
 - "miniupnpc-1.6.tar.gz"
