@@ -1802,8 +1802,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a DraftCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Введите DraftCoin-адрес (например B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a DraftCoin address (e.g. DNM6vjVUsC9eJuX6PNYqWnrMmJdjEfftwm)</source>
+        <translation>Введите DraftCoin-адрес (например DNM6vjVUsC9eJuX6PNYqWnrMmJdjEfftwm)</translation>
     </message>
     <message>
         <location line="+15"/>
