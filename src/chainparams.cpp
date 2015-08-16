@@ -95,7 +95,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x96b2046ee922b5724d19ade2ca7f44bc828e8b850f6e5416a98cf4fbea18ba87"));
 
 		vSeeds.push_back(CDNSSeedData("dns.btcdraft.ca", "dns.btcdraft.ca"));
-		vSeeds.push_back(CDNSSeedData("dns2.btcdraft.ca", "dns2.btcdraft.ca"));
+		vSeeds.push_back(CDNSSeedData("167.114.153.211", "167.114.153.211"));
                 vSeeds.push_back(CDNSSeedData("167.114.152.149", "167.114.152.149"));
                 vSeeds.push_back(CDNSSeedData("167.114.152.148", "167.114.152.148"));
 
