@@ -1816,8 +1816,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a DraftCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Indtast en DraftCoin-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a DraftCoin address (e.g. DNM6vjVUsC9eJuX6PNYqWnrMmJdjEfftwm)</source>
+        <translation>Indtast en DraftCoin-adresse (f.eks DNM6vjVUsC9eJuX6PNYqWnrMmJdjEfftwm)</translation>
     </message>
     <message>
         <location line="+15"/>
