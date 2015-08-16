@@ -1816,8 +1816,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a DraftCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Napiš DraftCoin adresu (např. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a DraftCoin address (e.g. DNM6vjVUsC9eJuX6PNYqWnrMmJdjEfftwm)</source>
+        <translation>Napiš DraftCoin adresu (např. DNM6vjVUsC9eJuX6PNYqWnrMmJdjEfftwm)</translation>
     </message>
     <message>
         <location line="+15"/>
