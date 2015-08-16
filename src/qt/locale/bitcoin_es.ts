@@ -1816,8 +1816,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a DraftCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduce una dirección DraftCoin (p.ej. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a DraftCoin address (e.g. DNM6vjVUsC9eJuX6PNYqWnrMmJdjEfftwm)</source>
+        <translation>Introduce una dirección DraftCoin (p.ej. DNM6vjVUsC9eJuX6PNYqWnrMmJdjEfftwm)</translation>
     </message>
     <message>
         <location line="+15"/>
