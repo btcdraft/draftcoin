@@ -19,12 +19,16 @@ RUN apt-get -y install libssl-dev
 RUN apt-get -y update
 RUN apt-get -y install libdb++-dev
 RUN apt-get -y install libboost-all-dev
-
+RUN apt-get -y install libminiupnpc-dev
 
 
 WORKDIR /var/www/draftcoin
 
 COPY . ./.
+COPY /usr/local/draftcoin.conf /home/root/.DraftCoin/DraftCoin.conf
+
+RUN cd leveldb/ && chmod 755 * && cd ..
+
 
 RUN cd src/ && make -f makefile.unix
 
