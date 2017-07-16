@@ -1,0 +1,13 @@
+version: '3'
+services:
+  server-wallet:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      TERM: xterm
+    volumes:
+      - datavolume:/var/www/draftcoin
+
+volumes:
+  datavolume: {}
