@@ -25,11 +25,9 @@ RUN apt-get -y install libminiupnpc-dev
 WORKDIR /var/www/draftcoin
 
 COPY . ./.
-COPY /usr/local/draftcoin.conf /home/root/.DraftCoin/DraftCoin.conf
-
-RUN cd leveldb/ && chmod 755 * && cd ..
-
+COPY DraftCoin.conf /root/.DraftCoin/DraftCoin.conf
 
 RUN cd src/ && make -f makefile.unix
+RUN ./src/DraftCoind -d &> /dev/null &
 
 VOLUME /var/www/activesocial
