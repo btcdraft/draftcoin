@@ -96,9 +96,9 @@ public:
 
 		vSeeds.push_back(CDNSSeedData("dns.btcdraft.ca", "dns.btcdraft.ca"));
 		vSeeds.push_back(CDNSSeedData("149.56.101.219", "149.56.101.219"));
-		vSeeds.push_back(CDNSSeedData("158.68.199.130", "158.68.199.130"));
-		vSeeds.push_back(CDNSSeedData("99.230.153.135", "99.230.153.135"));
-	    	vSeeds.push_back(CDNSSeedData("68.206.22.32", "68.206.22.32"));
+		vSeeds.push_back(CDNSSeedData("158.69.199.130", "158.69.199.130"));
+		vSeeds.push_back(CDNSSeedData("99.248.230.242", "99.248.230.242"));
+	    	vSeeds.push_back(CDNSSeedData("68.206.29.192", "68.206.29.192"));
 	    	vSeeds.push_back(CDNSSeedData("209.195.104.6", "209.195.104.6"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(30);
