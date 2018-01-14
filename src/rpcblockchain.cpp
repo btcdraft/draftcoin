@@ -137,6 +137,7 @@ Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool fPri
     result.push_back(Pair("proofhash", blockindex->hashProof.GetHex()));
     result.push_back(Pair("entropybit", (int)blockindex->GetStakeEntropyBit()));
     result.push_back(Pair("modifier", strprintf("%016x", blockindex->nStakeModifier)));
+
     Array txinfo;
     BOOST_FOREACH (const CTransaction& tx, block.vtx)
     {
@@ -211,6 +212,25 @@ Value getrawmempool(const Array& params, bool fHelp)
         a.push_back(hash.ToString());
 
     return a;
+}
+
+Value removetransaction(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() != 1)
+        throw runtime_error(
+            "removetransaction txid\n"
+            "Removes transaction id from memory pool.");
+
+    uint256 hash;
+    hash.SetHex(params[0].get_str());
+
+    CTransaction tx;
+    uint256 hashBlock = 0;
+    if (!GetTransaction(hash, tx, hashBlock))
+        throw JSONRPCError(-5, "No information available about transaction in mempool");
+
+    mempool.remove(tx);
+    return tx.GetHash().GetHex();
 }
 
 Value getblockhash(const Array& params, bool fHelp)
