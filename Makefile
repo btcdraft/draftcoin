@@ -2758,8 +2758,13 @@ build/qrc_bitcoin.o: qrc_bitcoin.cpp
 ####### Install
 
 install:   FORCE
+	install -m 755 -p src/DraftCoind /usr/bin/DraftCoind
+
+install-qt:  
+	install -m 755 -p DraftCoin-qt /usr/bin/DraftCoin-qt
 
 uninstall:   FORCE
 
 FORCE:
+
 
