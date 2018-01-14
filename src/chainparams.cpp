@@ -103,6 +103,7 @@ public:
 	    	vSeeds.push_back(CDNSSeedData("209.195.104.6", "209.195.104.6"));
 	    	vSeeds.push_back(CDNSSeedData("204.188.161.57", "204.188.161.57"));
 	    	vSeeds.push_back(CDNSSeedData("204.188.161.61", "204.188.161.61"));
+	    	vSeeds.push_back(CDNSSeedData("55.133.130.87", "55.133.130.87"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(30);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(91);
