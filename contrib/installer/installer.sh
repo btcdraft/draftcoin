@@ -102,10 +102,10 @@ fi
 
 if [ $OS != "unknown" ]; then
 # OK Compile the app now
-	mkdir $HOMEDIR/draftcoin
-        cd $HOMEDIR/draftcoin
+#	mkdir $HOMEDIR/draftcoin
+        cd $HOMEDIR
         git clone https://github.com/btcdraft/draftcoin.git
-        cd draftcoin
+        cd $HOMEDIR/draftcoin
 
         mkdir $HOMEDIR/.DraftCoin
         cp DraftCoin.conf /$HOMEDIR/.DraftCoin/DraftCoin.conf
@@ -113,9 +113,8 @@ if [ $OS != "unknown" ]; then
 	if [ $BUILD = 'DAEMON' ]; then
 	# Build for Daemon only
         	cd src/ && make -f makefile.unix
-        	./src/DraftCoind -d &> /dev/null &
 		echo"Starting DraftCoin Daemon"
-		./src/DraftCoind --daemon &
+		$HOME/draftcoin/src/DraftCoind --daemon &
 
 	else
 
