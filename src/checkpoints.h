@@ -77,7 +77,8 @@ public:
     void SetNull()
     {
         nVersion = 1;
-        hashCheckpoint = 0;
+        // hashCheckpoint = 0;
+        hashCheckpoint = 150000; 
     }
 
     std::string ToString() const

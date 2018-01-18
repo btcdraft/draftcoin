@@ -467,6 +467,7 @@ public:
     }
 };
 
+
 #ifdef WIN32
 inline void SetThreadPriority(int nPriority)
 {
