@@ -1,9 +1,0 @@
-Building DraftCoin
-
-See doc/readme-qt.rst for instructions on building DraftCoin QT,
-the intended-for-end-users, nice-graphical-interface, reference
-implementation of DraftCoin.
-
-See doc/build-*.txt for instructions on building DraftCoind,
-the intended-for-services, no-graphical-interface, reference
-implementation of DraftCoin.
