@@ -14,8 +14,8 @@
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
-Copyright © 2012-2014 The DraftCoin developers
-Copyright © 2015 The DraftCoin developers</source>
+Copyright © 2012-2018 The DraftCoin developers
+Copyright © 2015-2018 The DraftCoin developers</source>
         <translation>版权所有 © 2009-2014 比特币Bitcoin开发组
 版权所有 © 2012-2014 新星币Novacoin开发组
 版权所有 © 2014 黑币DraftCoin开发组</translation>

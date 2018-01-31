@@ -17,8 +17,7 @@
         <location line="+41"/>
         <source>Copyright © 2009-2015 The Bitcoin developers
 Copyright © 2011-2012 PPCoin Developers
-Copyright © 2012-2014 The DraftCoin developers
-Copyright © 2014-2015 The DraftCoin developers</source>
+Copyright © 2014-2018 The DraftCoin developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

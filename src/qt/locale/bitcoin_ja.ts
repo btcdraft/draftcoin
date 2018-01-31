@@ -14,11 +14,11 @@
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
-Copyright © 2012-2014 The DraftCoin developers
-Copyright © 2015 The DraftCoin developers</source>
+Copyright © 2012-2018 The DraftCoin developers
+Copyright © 2015-2018 The DraftCoin developers</source>
         <translation>コピーライト © 2009-2014 The Bitcoin developers
-コピーライト © 2012-2014 The DraftCoin developers
-コピーライト © 2015 The DraftCoin developers</translation>
+コピーライト © 2012-2018 The DraftCoin developers
+コピーライト © 2015-2018 The DraftCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
