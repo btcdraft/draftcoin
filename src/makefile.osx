@@ -13,11 +13,15 @@ INCLUDEPATHS= \
  -I"$(CURDIR)" \
  -I"$(CURDIR)"/obj \
  -I"$(DEPSDIR)/include" \
- -I"$(DEPSDIR)/include/db48"
+ -I"/usr/local/Cellar" \
+ -I"/usr/local/opt/" \
+ -I"/usr/local/opt/openssl/include"  
 
 LIBPATHS= \
  -L"$(DEPSDIR)/lib" \
- -L"$(DEPSDIR)/lib/db48"
+ -L"$(DEPSDIR)/lib/db48" \
+ -L"/usr/local/opt/openssl/lib" \
+ -L"/usr/local/opt" 
 
 USE_UPNP:=1
 USE_WALLET:=1
