@@ -6,8 +6,8 @@
 # Mac OS X makefile for DraftCoin
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
 
-CXX=g++
-DEPSDIR=/opt/osx
+CXX=llvm-g++
+DEPSDIR=/opt/local
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
