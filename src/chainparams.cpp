@@ -128,8 +128,8 @@ public:
 		vSeeds.push_back(CDNSSeedData("99.248.230.242", "99.248.230.242"));
 	    	vSeeds.push_back(CDNSSeedData("68.206.29.192", "68.206.29.192"));
 	    	vSeeds.push_back(CDNSSeedData("209.195.104.6", "209.195.104.6"));
-	    	vSeeds.push_back(CDNSSeedData("155.133.130.87", "155.133.130.87"));
 /*
+	Change to support Boost 1.6
         base58Prefixes[PUBKEY_ADDRESS] = list_of(30);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(91);
         base58Prefixes[SECRET_KEY] =     list_of(117);
@@ -143,6 +143,7 @@ public:
 	base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0xc73)(0xDD)(0x55).convert_to_container<std::vector<unsigned char> >();
 
 /*
+Change to support Boost 1.6
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x73)(0x77)(0xEE);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x73)(0xDD)(0x55);
 */

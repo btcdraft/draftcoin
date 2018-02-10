@@ -60,7 +60,7 @@ namespace Checkpoints
     bool SendSyncCheckpoint(uint256 hashCheckpoint);
 }
 
-// ppcoin: synchronized checkpoint
+// draftcoin: synchronized checkpoint
 class CUnsignedSyncCheckpoint
 {
 public:
