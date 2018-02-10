@@ -92,6 +92,10 @@ public:
         printf("%x\n MAIN ", bnProofOfWorkLimit.GetCompact());
         printf("%d\n MAIN ", genesis.nNonce);
 */
+
+/*
+Updated to support DNS masternode entries
+*/
         assert(hashGenesisBlock == uint256("0x00000626d583465e39cc5eec2020f639792843efcfb4182d508e6734d4cfdab6"));
         assert(genesis.hashMerkleRoot == uint256("0x96b2046ee922b5724d19ade2ca7f44bc828e8b850f6e5416a98cf4fbea18ba87"));
 
