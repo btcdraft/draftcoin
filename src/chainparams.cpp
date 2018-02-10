@@ -95,22 +95,58 @@ public:
         assert(hashGenesisBlock == uint256("0x00000626d583465e39cc5eec2020f639792843efcfb4182d508e6734d4cfdab6"));
         assert(genesis.hashMerkleRoot == uint256("0x96b2046ee922b5724d19ade2ca7f44bc828e8b850f6e5416a98cf4fbea18ba87"));
 
+		vSeeds.push_back(CDNSSeedData("node1.btcdraft.com", "node1.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node2.btcdraft.com", "node2.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node3.btcdraft.com", "node3.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node4.btcdraft.com", "node4.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node5.btcdraft.com", "node5.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node6.btcdraft.com", "node6.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node7.btcdraft.com", "node7.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node8.btcdraft.com", "node8.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node9.btcdraft.com", "node9.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node10.btcdraft.com", "node10.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node11.btcdraft.com", "node11.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node12.btcdraft.com", "node12.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node13.btcdraft.com", "node13.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node14.btcdraft.com", "node14.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node15.btcdraft.com", "node15.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node16.btcdraft.com", "node16.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node17.btcdraft.com", "node17.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node18.btcdraft.com", "node18.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node19.btcdraft.com", "node19.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node20.btcdraft.com", "node20.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node21.btcdraft.com", "node21.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node22.btcdraft.com", "node22.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node23.btcdraft.com", "node23.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node24.btcdraft.com", "node24.btcdraft.com"));
+		vSeeds.push_back(CDNSSeedData("node25.btcdraft.com", "node25.btcdraft.com"));
 		vSeeds.push_back(CDNSSeedData("dns.btcdraft.ca", "dns.btcdraft.ca"));
+	    	vSeeds.push_back(CDNSSeedData("204.188.161.57", "204.188.161.57"));
 		vSeeds.push_back(CDNSSeedData("149.56.101.219", "149.56.101.219"));
 		vSeeds.push_back(CDNSSeedData("158.69.199.130", "158.69.199.130"));
+	    	vSeeds.push_back(CDNSSeedData("204.188.161.61", "204.188.161.61"));
 		vSeeds.push_back(CDNSSeedData("99.248.230.242", "99.248.230.242"));
 	    	vSeeds.push_back(CDNSSeedData("68.206.29.192", "68.206.29.192"));
 	    	vSeeds.push_back(CDNSSeedData("209.195.104.6", "209.195.104.6"));
-	    	vSeeds.push_back(CDNSSeedData("204.188.161.57", "204.188.161.57"));
-	    	vSeeds.push_back(CDNSSeedData("204.188.161.61", "204.188.161.61"));
-	    	vSeeds.push_back(CDNSSeedData("155.133.130.87", "155.133.130.87"));
-
+/*
+	Change to support Boost 1.6
         base58Prefixes[PUBKEY_ADDRESS] = list_of(30);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(91);
         base58Prefixes[SECRET_KEY] =     list_of(117);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x73)(0x77)(0xEE);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x73)(0xDD)(0x55);
+  */      
+	base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,91);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,117);
+	base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0xc73)(0x77)(0xEE).convert_to_container<std::vector<unsigned char> >();
+	base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0xc73)(0xDD)(0x55).convert_to_container<std::vector<unsigned char> >();
 
+/*
+Change to support Boost 1.6
+        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x73)(0x77)(0xEE);
+        base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x73)(0xDD)(0x55);
+*/
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         nLastPOWBlock = 15000;
@@ -184,11 +220,18 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(110);
+        /* 
+	base58Prefixes[PUBKEY_ADDRESS] = list_of(110);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(196);
         base58Prefixes[SECRET_KEY]     = list_of(239);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x35)(0x17)(0xFF);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x35)(0x43)(0x99);
+	*/
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,110);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
+        base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1,239);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x17)(0xFF).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x43)(0x99).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
