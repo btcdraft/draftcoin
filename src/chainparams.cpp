@@ -121,13 +121,13 @@ public:
 		vSeeds.push_back(CDNSSeedData("node24.btcdraft.com", "node24.btcdraft.com"));
 		vSeeds.push_back(CDNSSeedData("node25.btcdraft.com", "node25.btcdraft.com"));
 		vSeeds.push_back(CDNSSeedData("dns.btcdraft.ca", "dns.btcdraft.ca"));
+	    	vSeeds.push_back(CDNSSeedData("204.188.161.57", "204.188.161.57"));
 		vSeeds.push_back(CDNSSeedData("149.56.101.219", "149.56.101.219"));
 		vSeeds.push_back(CDNSSeedData("158.69.199.130", "158.69.199.130"));
+	    	vSeeds.push_back(CDNSSeedData("204.188.161.61", "204.188.161.61"));
 		vSeeds.push_back(CDNSSeedData("99.248.230.242", "99.248.230.242"));
 	    	vSeeds.push_back(CDNSSeedData("68.206.29.192", "68.206.29.192"));
 	    	vSeeds.push_back(CDNSSeedData("209.195.104.6", "209.195.104.6"));
-	    	vSeeds.push_back(CDNSSeedData("204.188.161.57", "204.188.161.57"));
-	    	vSeeds.push_back(CDNSSeedData("204.188.161.61", "204.188.161.61"));
 	    	vSeeds.push_back(CDNSSeedData("155.133.130.87", "155.133.130.87"));
 /*
         base58Prefixes[PUBKEY_ADDRESS] = list_of(30);
