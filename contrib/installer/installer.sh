@@ -84,7 +84,7 @@ if [ $OS = "debian" ]; then
 	sudo apt-get -y update
 	sudo apt-get -y install libssl-dev
 	sudo apt-get -y update
-	sudo apt-get -y install libdb++-dev
+	sudo apt-get -y install libdb++-dev qt4-qmake libqt4-dev
 	sudo apt-get -y install libboost-all-dev
 	sudo apt-get -y install libminiupnpc-dev
 
