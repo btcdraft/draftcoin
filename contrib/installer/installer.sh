@@ -84,16 +84,21 @@ if [ $OS = "debian" ]; then
 	sudo apt-get -y update
 	sudo apt-get -y install libssl-dev
 	sudo apt-get -y update
-	sudo apt-get -y install libdb++-dev qt4-qmake libqt4-dev
+	sudo apt-get -y install libdb++-dev 
 	sudo apt-get -y install libboost-all-dev
 	sudo apt-get -y install libminiupnpc-dev
+	if [ $BUILD = "GUI" ]; then
+	sudo apt-get -y qt5-qmake libqt5-dev
+	fi
 
 fi
 
 #Perform Fedora Updates
 if [ $OS = "fedora" ]; then
 
-	sudo dnf install gcc-c++ libtool make autoconf automake openssl-devel libevent-devel boost-devel python3 miniupnpc-devel qt5-qttools-devel qt5-qtbase-devel protobuf-devel qrencode-devel
+	sudo dnf install gcc-c++ libtool make autoconf automake openssl-devel libevent-devel boost-devel python3 miniupnpc-devel protobuf-devel qrencode-devel
+	if [ $BUILD = "GUI" ]; then
+	sudo dnf install qt5-qttools-devel qt5-qtbase-devel	fi
 
 fi
 
