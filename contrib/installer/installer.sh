@@ -98,7 +98,8 @@ if [ $OS = "fedora" ]; then
 
 	sudo dnf install gcc-c++ libtool make autoconf automake openssl-devel libevent-devel boost-devel python3 miniupnpc-devel protobuf-devel qrencode-devel
 	if [ $BUILD = "GUI" ]; then
-	sudo dnf install qt5-qttools-devel qt5-qtbase-devel	fi
+	sudo dnf install qt5-qttools-devel qt5-qtbase-devel	
+	fi
 
 fi
 
