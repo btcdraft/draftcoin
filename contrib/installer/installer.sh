@@ -88,7 +88,7 @@ if [ $OS = "debian" ]; then
 	sudo apt-get -y install libboost-all-dev
 	sudo apt-get -y install libminiupnpc-dev
 	if [ $BUILD = "GUI" ]; then
-	sudo apt-get -y qt5-qmake libqt5-dev
+	sudo apt-get -y qt4
 	fi
 
 fi
