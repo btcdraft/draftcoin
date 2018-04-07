@@ -88,7 +88,7 @@ if [ $OS = "debian" ]; then
 	sudo apt-get -y install libboost-all-dev
 	sudo apt-get -y install libminiupnpc-dev
 	if [ $BUILD = "GUI" ]; then
-	sudo apt-get -y qt4
+	sudo apt-get -y libqt4-designer libqt4-opengl libqt4-svg libqtgui4 libqtwebkit4
 	fi
 
 fi
