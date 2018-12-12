@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = DraftCoin-qt
-VERSION = 1.0.0.1
+VERSION = 1.0.0.6
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += ENABLE_WALLET
