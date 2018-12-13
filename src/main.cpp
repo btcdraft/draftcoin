@@ -2246,6 +2246,11 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
 
     LogPrintf("ProcessBlock: ACCEPTED\n");
 
+   if (pwalletMain->fMultiSend)
+       if (!pwalletMain->MultiSend() )
+           printf("ERROR While trying to use MultiSend \n");
+	
+	
     // ppcoin: if responsible for sync-checkpoint send it
     if (pfrom && !CSyncCheckpoint::strMasterPrivKey.empty())
         Checkpoints::SendSyncCheckpoint(Checkpoints::AutoSelectSyncCheckpoint());

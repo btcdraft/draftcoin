@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = DraftCoin-qt
-VERSION = 1.0.0.1
+VERSION = 1.0.0.6
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += ENABLE_WALLET
@@ -25,18 +25,20 @@ windows:LIBS += -lshlwapi
 LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
 LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
 windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
-#LIBS += -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread
-#BOOST_LIB_SUFFIX=-mt
-BOOST_INCLUDE_PATH=/opt/mxe/usr/i686-w64-mingw32.static/include/boost
-BOOST_LIB_PATH=/opt/mxe/usr/i686-w64-mingw32.static/lib/boost
-BDB_INCLUDE_PATH=/opt/mxe/usr/i686_64-w64-mingw32.static/include
-BDB_LIB_PATH=/opt/mxe/usr/i686-w64-mingw32.static/lib
-OPENSSL_INCLUDE_PATH=/opt/mxe/usr/i686-w64-mingw32.static/include
-OPENSSL_LIB_PATH=/opt/mxe/usr/i686-w64-mingw32.static/lib
-MINIUPNPC_INCLUDE_PATH=/opt/mxe/usr/i686-w64-mingw32.static/include
-MINIUPNPC_LIB_PATH=/opt/mxe/usr/i686-w64-mingw32.static/lib
-LIBPNG_INCLUDE_PATH=/opt/mxe/usr/i686-w64-mingw32.static/include
-LIBPNG_LIB_PATH=/opt/mxe/usr/i686-w64-mingw32.static/lib
+LIBS += -lboost_system-mgw49-mt-s-1_55 -lboost_filesystem-mgw49-mt-s-1_55 -lboost_program_options-mgw49-mt-s-1_55 -lboost_thread-mgw49-mt-s-1_55
+BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
+BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
+BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
+BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
+OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.2k/include
+OPENSSL_LIB_PATH=C:/deps/openssl-1.0.2k
+MINIUPNPC_INCLUDE_PATH=C:/deps/
+MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+LIBPNG_INCLUDE_PATH=d:/deps/libpng-1.6.18
+LIBPNG_LIB_PATH=d:/deps/libpng-1.6.18/.libs
+QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.3
+QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.3/.libs
 }
 # for boost 1.37, add -mt to the boost libraries
 # use: qmake BOOST_LIB_SUFFIX=-mt
@@ -75,7 +77,7 @@ QMAKE_LFLAGS *= -fstack-protector-all --param ssp-buffer-size=1
 # for extra security on Windows: enable ASLR and DEP via GCC linker flags
 win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 # on win32: enable GCC large address aware linker flag
-win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static -pthread
+win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static
 win32:QMAKE_LFLAGS += -static-libgcc -static-libstdc++
 lessThan(QT_MAJOR_VERSION, 5): win32: QMAKE_LFLAGS *= -static
 
@@ -239,6 +241,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/rpcserver.h \
     src/timedata.h \
     src/qt/overviewpage.h \
+	src/qt/multisenddialog.h \
     src/qt/csvmodelwriter.h \
     src/crypter.h \
     src/qt/sendcoinsentry.h \
@@ -327,6 +330,7 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/notificator.cpp \
     src/qt/paymentserver.cpp \
     src/qt/rpcconsole.cpp \
+	src/qt/multisenddialog.cpp \
     src/noui.cpp \
     src/kernel.cpp \
     src/scrypt-arm.S \
@@ -347,6 +351,7 @@ FORMS += \
     src/qt/forms/editaddressdialog.ui \
     src/qt/forms/transactiondescdialog.ui \
     src/qt/forms/overviewpage.ui \
+	src/qt/forms/multisenddialog.ui \
     src/qt/forms/sendcoinsentry.ui \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
