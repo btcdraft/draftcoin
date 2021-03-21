@@ -1,5 +1,12 @@
 
-DraftCoin development tree
+------ NOTICE -------  
+During April of 20201 BTCDraft will be performing a hard fork on the blockchain.
+This fork will include a Swap to the new DraftCoinZ blockchain and coin swap for same.
+https://github.com/btcdraft/DraftCoinZ
+
+
+
+DraftCoin development tree (RETIRED)
 
 DraftCoin is a PoS-based cryptocurrency.
 
